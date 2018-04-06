@@ -1,20 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>咖喱鹏的博客</title>
-  <icon>https://www.gravatar.com/avatar/7446190ffd2ca991853bfd310549ebbe</icon>
+  <title>咖喱鹏的个人博客</title>
+  <icon>https://www.gravatar.com/avatar/0589cf80f60b99c95811c19509b17bff</icon>
   
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.linpblog.com/"/>
-  <updated>2018-03-31T11:48:26.000Z</updated>
+  <updated>2018-04-06T04:54:57.000Z</updated>
   <id>https://www.linpblog.com/</id>
   
   <author>
     <name>咖喱鹏</name>
-    <email>lp1142798229@gmail.com</email>
+    <email>1142798229@QQ.com</email>
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>学习JavaScript，快速入门1</title>
+    <link href="https://www.linpblog.com/2018/04/06/%E5%AD%A6%E4%B9%A0JavaScript%EF%BC%8C%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A81/"/>
+    <id>https://www.linpblog.com/2018/04/06/学习JavaScript，快速入门1/</id>
+    <published>2018-04-06T04:54:21.000Z</published>
+    <updated>2018-04-06T04:54:57.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>学习JavaScript学习,如果让我重新学。。。<br>    如果让我现在重新学JS</p><p>##1，首先我会去看JS 基本使用语法，(一下几点，先看几遍过去)<br>(1)变量<br>(2)数据类型<br>(3)运算<br>(4)条件语句<br>(5)循环体基本结构<br>(6)函数<br>(7)对象</p><p>##2.安装工具<br>先安装一个Chrome浏览器，一个HBuilder[HBuilder这软件发家的]，不会再去折腾一些IDE[开发工具/编辑器]。<br>简单的了解一下 Chrome-&gt;开发者工具[F12]-&gt;console 的使用方法</p><p>##3.简单的介绍一下js的数据类型<br>字符串(String)、数字(Number)、布尔(Boolean)、数组(Array)、对象(Object)、空(Null)、未定义(Undefined)<br>使用关键字 var 定义一个变量</p><p>###字符串(String)<br>字符串可以是引号中的任意文本[字符串]。可以使用单引号或双引号：<br><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">var data=<span class="string">"String data"</span>;</span><br></pre></td></tr></table></figure></p><p>###数字(Number)<br>只有一种数字类型。数字可以带小数点，也可以不带，可以极大或极小的数字可以通过科学（指数）计数法来书写：<br><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">var num1=34.00;</span><br><span class="line">var num2=34;</span><br></pre></td></tr></table></figure></p><p>科学（指数）计数法<br><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">var num3=123e5;      // 12300000</span><br><span class="line">var num4=123e-5;     // 0.00123</span><br></pre></td></tr></table></figure></p><p>###布尔(Boolean)<br><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">var Bool1=<span class="literal">true</span>;</span><br><span class="line">var Bool2=<span class="literal">false</span>;</span><br></pre></td></tr></table></figure></p><p>###数组(Array)<br><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">var arr1=new Array();</span><br><span class="line">arr1[0]=<span class="string">"data1"</span>;</span><br><span class="line">arr1[1]=<span class="string">"data2"</span>;</span><br><span class="line">arr1[2]=<span class="string">"data3"</span>;</span><br></pre></td></tr></table></figure></p><p>或者 (condensed array):<br><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">var arr2=new Array(<span class="string">"data1"</span>,<span class="string">"data2"</span>,<span class="string">"data3"</span>);</span><br></pre></td></tr></table></figure></p><p>或者 (literal array):<br><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">var arr3=[<span class="string">"arr4"</span>,<span class="string">"arr5"</span>,<span class="string">"arr6"</span>];</span><br><span class="line">var arr4 = [ ]; //创建一个空数组</span><br></pre></td></tr></table></figure></p><p>###对象(Object)<br>对象由花括号分隔。在括号内部，对象的属性以名称和值对的形式 (name : value) 来定义。属性由逗号分隔,name也可以是中文(少用[ (^_^) ]：<br><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">var Object1=&#123;</span><br><span class="line">firstname:<span class="string">"John"</span>,</span><br><span class="line">lastname:<span class="string">"Doe"</span>, </span><br><span class="line">id:5566,</span><br><span class="line"><span class="string">"中文"</span>:<span class="string">"中文信息"</span>,</span><br><span class="line">其他:<span class="string">"其他信息"</span></span><br><span class="line">&#125;;</span><br><span class="line">//也可先创建对象再追加，修改属性和值</span><br><span class="line">Object1.data = <span class="string">"data1"</span>;</span><br><span class="line">//或</span><br><span class="line">Object1[<span class="string">'data'</span>] = <span class="string">'data3'</span>;</span><br></pre></td></tr></table></figure></p><p>对象属性有两种寻址方式：<br><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">var data3 = Object1.其他</span><br><span class="line">data3 = Object1[<span class="string">'其他'</span>]</span><br></pre></td></tr></table></figure></p><p>###空(Null)<br>可以通过将变量的值设置为 null 来清空变量。<br><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">Object1=null</span><br></pre></td></tr></table></figure></p><p>###未定义(Undefined)<br>Undefined 这个值表示变量不含有值。变量初始化为Undefined<br><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">var data4;</span><br><span class="line">console.log(data4);</span><br></pre></td></tr></table></figure></p><p>###声明变量类型<br><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">var data=new String;</span><br><span class="line">var num1=      new Number;</span><br><span class="line">var Bool1=      new Boolean;</span><br><span class="line">var arr1=   new Array;</span><br><span class="line">var Object1= new Object;</span><br><span class="line">console.log(</span><br><span class="line"><span class="string">"data是：  "</span> + data  + <span class="string">"\r\n"</span> +</span><br><span class="line"><span class="string">"num1是：  "</span> + num1  + <span class="string">"\r\n"</span> +</span><br><span class="line"><span class="string">"Bool1是： "</span> + Bool1 + <span class="string">"\r\n"</span> +</span><br><span class="line"><span class="string">"arr1是：  "</span> + arr1  + <span class="string">"\r\n"</span> +</span><br><span class="line"><span class="string">"Object1是："</span> + Object1</span><br><span class="line">);</span><br></pre></td></tr></table></figure></p><p>##4.尽快的开始学习JS<br>在控制台中定义变量，把以上的每种都试一遍，然后console.log 输出看看<br><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">var data4;</span><br><span class="line">console.log(data4);</span><br></pre></td></tr></table></figure></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;学习JavaScript学习,如果让我重新学。。。&lt;br&gt;    如果让我现在重新学JS&lt;/p&gt;
+&lt;p&gt;##1，首先我会去看JS 基本使用语法，(一下几点，先看几遍过去)&lt;br&gt;(1)变量&lt;br&gt;(2)数据类型&lt;br&gt;(3)运算&lt;br&gt;(4)条件语句&lt;br&gt;(5)循环体基本
+      
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>多年前 写了个 XXtouch 自动注册 ICloud 账号的lua 留念一下</title>
