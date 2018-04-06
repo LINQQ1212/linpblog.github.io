@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[学习JavaScript，快速入门1]]></title>
+    <title><![CDATA[学习JavaScript,建议1]]></title>
     <url>%2F2018%2F04%2F06%2F%E5%AD%A6%E4%B9%A0JavaScript%EF%BC%8C%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A81%2F</url>
     <content type="text"><![CDATA[学习JavaScript学习,如果让我重新学。。。 如果让我现在重新学JS ##1，首先我会去看JS 基本使用语法，(一下几点，先看几遍过去)(1)变量(2)数据类型(3)运算(4)条件语句(5)循环体基本结构(6)函数(7)对象 ##2.安装工具先安装一个Chrome浏览器，一个HBuilder[HBuilder这软件发家的]，不会再去折腾一些IDE[开发工具/编辑器]。简单的了解一下 Chrome-&gt;开发者工具[F12]-&gt;console 的使用方法 ##3.简单的介绍一下js的数据类型字符串(String)、数字(Number)、布尔(Boolean)、数组(Array)、对象(Object)、空(Null)、未定义(Undefined)使用关键字 var 定义一个变量 ###字符串(String)字符串可以是引号中的任意文本[字符串]。可以使用单引号或双引号：var data="String data"; ###数字(Number)只有一种数字类型。数字可以带小数点，也可以不带，可以极大或极小的数字可以通过科学（指数）计数法来书写：var num1=34.00;var num2=34; 科学（指数）计数法var num3=123e5; // 12300000var num4=123e-5; // 0.00123 ###布尔(Boolean)var Bool1=true;var Bool2=false; ###数组(Array)var arr1=new Array();arr1[0]="data1";arr1[1]="data2";arr1[2]="data3"; 或者 (condensed array):var arr2=new Array("data1","data2","data3"); 或者 (literal array):var arr3=["arr4","arr5","arr6"];var arr4 = [ ]; //创建一个空数组 ###对象(Object)对象由花括号分隔。在括号内部，对象的属性以名称和值对的形式 (name : value) 来定义。属性由逗号分隔,name也可以是中文(少用[ (^_^) ]：var Object1=&#123; firstname:"John", lastname:"Doe", id:5566, "中文":"中文信息", 其他:"其他信息"&#125;;//也可先创建对象再追加，修改属性和值Object1.data = "data1";//或Object1['data'] = 'data3'; 对象属性有两种寻址方式：var data3 = Object1.其他data3 = Object1['其他'] ###空(Null)可以通过将变量的值设置为 null 来清空变量。Object1=null ###未定义(Undefined)Undefined 这个值表示变量不含有值。变量初始化为Undefinedvar data4;console.log(data4); ###声明变量类型var data=new String;var num1= new Number;var Bool1= new Boolean;var arr1= new Array;var Object1= new Object;console.log( "data是： " + data + "\r\n" + "num1是： " + num1 + "\r\n" + "Bool1是： " + Bool1 + "\r\n" + "arr1是： " + arr1 + "\r\n" + "Object1是：" + Object1); ##4.尽快的开始学习JS在控制台中定义变量，把以上的每种都试一遍，然后console.log 输出看看var data4;console.log(data4);]]></content>
+      <categories>
+        <category>JavaScript</category>
+      </categories>
+      <tags>
+        <tag>JavaScript</tag>
+      </tags>
   </entry>
   <entry>
     <title><![CDATA[多年前 写了个 XXtouch 自动注册 ICloud 账号的lua 留念一下]]></title>
